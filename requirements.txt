@@ -3,7 +3,6 @@ langchain
 langchain-groq
 transformers
 torch
-json
 PyPDF2
 numpy
 streamlit
