@@ -40,7 +40,7 @@ def main():
         llm = ChatGroq(
             temperature=0,
             groq_api_key=api_key,
-            model_name="llama-3.1-70b-versatile"
+            model_name="llama-3.3-70b-versatile"
         )
 
         # Create a prompt template
