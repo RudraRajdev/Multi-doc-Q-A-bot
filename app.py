@@ -5,11 +5,11 @@ from retriever import retrieve_documents
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from dotenv import load_dotenv
 
-load_dotenv()
 
-api_key = os.getenv('GROQ_API_KEY')
+
+
+
 
 def main():
     st.title("Q&A Bot")
@@ -39,7 +39,7 @@ def main():
         # Initialize the ChatGroq instance
         llm = ChatGroq(
             temperature=0,
-            groq_api_key=api_key,
+            api_key="",                                     #Put your groq api key
             model_name="llama-3.3-70b-versatile"
         )
 
